@@ -5,17 +5,18 @@ An analysis of data stored in a SQLite database conducted via a jupyter notebook
 
 ## Description
 
-To help plan for a hypothetical trip to Honolulu, Hawaii, a climate analysis and data exploration about the area using a SQLite database containing data from several weather stations in the area.  Using the data in the database, the following variables and topics were analyzed within a jupyter notebook:
+To help plan for a hypothetical trip to Honolulu, Hawaii, a climate analysis and data exploration was conducted using a SQLite database containing data gathered from several weather stations in the area.  Using a jupyter notebook, the following variables and topics were analyzed and explored:
 
-* Precipitation - exploring the latest 12 months of measured precipitation data (in inches) in the database via bar plot and summary statistics
+#### Precipitation Analysis
+The latest 12 months of measured precipitation data (in inches) in the datset was queried and analyzed via a bar plot and general summary statistics
 
-* Weather Station Activity - identifying the total number of stations in the dataset and tallying up the number of observations per station to determine the most active one
+#### Weather Station Analysis
+The total number of distinct weather stations in the dataset was calculated and then ranked based upon the the number of observations per station.  Based on this ranking, the most active weather station was identified.  Focusing on specifically on this most active station, the lowest, highest, and average temperatures were calculated.  The latest 12 months of temperature observations (TOBS) for this station was then queried and then plotted as a histogram.
 
-* Temperature - determining the lowest, highest, and average temperatures of the most active station and then analyzing its temperatures observation (TOBS) data for the latest 12 months
-
+#### API
 A Flask API was then created based on the queries dervied from the above analysis.  Using Python, the API was coded to have the following routes:
 1. A static route to the homepage listing all the available routes
-2. A static route to the latest 12 months of precipitation data, displayed as a JSON dictionary where date is the key and the measured precipation is the value
+2. A static route that displays the latest 12 months of precipitation data, displayed as a JSON dictionary where date is the key and the measured precipation is the value
 3. A static route that displays a JSON list of all weather stations from the dataset
 4. A static route that displays a JSON list of temperature observations for the latest 12 months
 5. A dynamic route that displays a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
