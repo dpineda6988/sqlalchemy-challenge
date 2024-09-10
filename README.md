@@ -5,7 +5,7 @@ An analysis of data stored in a SQLite database conducted via a jupyter notebook
 
 ## Description
 
-To help plan for a hypothetical trip to Honolulu, Hawaii, I've decided to perform a climate analysis and data exploration about the area using a SQLite database containing data from several weather stations in the area.  Using the data in the database, I've conducted an analysis of the following variables within a jupyter notebook:
+To help plan for a hypothetical trip to Honolulu, Hawaii, a climate analysis and data exploration about the area using a SQLite database containing data from several weather stations in the area.  Using the data in the database, the following variables and topics were analyzed within a jupyter notebook:
 
 * Precipitation - exploring the latest 12 months of measured precipitation data (in inches) in the database via bar plot and summary statistics
 
@@ -37,8 +37,9 @@ Once the necessary programs and libraries are installed, the SurfsUp directory c
 Daniel Pineda
 
 ## Acknowledgments
-EmployeeSQL was created as an assignment for the University of California, Irvine Data Analytics Bootcamp - June 2024 Cohort under the instruction and guidance of Melissa Engle (Instructor) and Mitchell Stone (TA).
+SurfsUp was created as an assignment for the University of California, Irvine Data Analytics Bootcamp - June 2024 Cohort under the instruction and guidance of Melissa Engle (Instructor) and Mitchell Stone (TA).
 The practical exercises and coding examples demonstrated through the bootcamp helped inform and inspire the code for this project.
 
 Additionally, the following resources were used for further reference:
+
 Xpert Learning Assistant - UCI's AI-powered learning assistant - referenced for how to reset the number of tick labels along an axis in a pyplot ('climate_starter.ipynb - code cell 10)
