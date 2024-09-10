@@ -5,13 +5,13 @@ An analysis of data stored in a SQLite database conducted via a jupyter notebook
 
 ## Description
 
-To help plan for a hypothetical trip to Honolulu, Hawaii, a climate analysis and data exploration was conducted using a SQLite database containing data gathered from several weather stations in the area.  Using a jupyter notebook, the following variables and topics were analyzed and explored:
+To help plan for a hypothetical trip to Honolulu, Hawaii, an exploratory analysis was conducted using a SQLite database containing data gathered from several weather stations in the area.  Using a jupyter notebook, the following variables and topics were analyzed and explored:
 
 #### Precipitation Analysis
 The latest 12 months of measured precipitation data (in inches) in the datset was queried and analyzed via a bar plot and general summary statistics
 
 #### Weather Station Analysis
-The total number of distinct weather stations in the dataset was calculated and then ranked based upon the the number of observations per station.  Based on this ranking, the most active weather station was identified.  Focusing on specifically on this most active station, the lowest, highest, and average temperatures were calculated.  The latest 12 months of temperature observations (TOBS) for this station was then queried and then plotted as a histogram.
+The total number of distinct weather stations in the dataset was quieried and then ordered based upon the the number of observations per station.  Based on this ranking, the most active weather station was identified.  Focusing on specifically on data from the most active station, the lowest, highest, and average temperatures were calculated.  The latest 12 months of temperature observations (TOBS) for this station was then queried and then plotted as a histogram.
 
 #### API
 A Flask API was then created based on the queries dervied from the above analysis.  Using Python, the API was coded to have the following routes:
